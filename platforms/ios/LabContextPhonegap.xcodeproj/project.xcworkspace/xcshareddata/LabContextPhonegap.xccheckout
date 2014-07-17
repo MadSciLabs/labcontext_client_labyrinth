@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>53B20CC8-4B5D-4033-896E-D71E9B2B7640</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LabContextPhonegap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>17DF1EE1-8F3F-4462-8030-B52AD602C114</key>
+		<string>https://github.com/MadSciLabs/labcontext_client_phonegap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/LabContextPhonegap.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>17DF1EE1-8F3F-4462-8030-B52AD602C114</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MadSciLabs/labcontext_client_phonegap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>17DF1EE1-8F3F-4462-8030-B52AD602C114</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>17DF1EE1-8F3F-4462-8030-B52AD602C114</string>
+			<key>IDESourceControlWCCName</key>
+			<string>labcontext_client_phonegap</string>
+		</dict>
+	</array>
+</dict>
+</plist>
