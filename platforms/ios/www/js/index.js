@@ -486,6 +486,7 @@ Tilting controls
 
 function initTiltControls() {
     sb.addPublish("testBoolean", "boolean", false);
+    sb.addPublish("resetBoolean","boolean", false);
     sb.addPublish("tilt_x","string","");
     sb.addPublish("tilt_y", "string", "");
     console.log("String publishers added");
@@ -507,6 +508,22 @@ function initTiltControls() {
     }
     calibrateTilt();
     //alert("initialized");
+    
+    resetButton = document.createElement("BUTTON");
+    var buttontext = document.createTextNode("Reload the game");
+    resetButton.appendChild(buttontext);
+    resetButton.addEventListener('touchstart', function(event) {
+                                 resetBoolean = true;
+        });
+    resetButton.style.position = "absolute";
+    resetButton.style.buttonAlign = "center";
+    resetButton.style.height = "30px";
+    resetButton.style.width="200px";
+    resetButton.style.top = canvas.height*.85 + "px";
+    resetButton.style.left = canvas.width/2 - 100 + "px";
+    resetButton.style.zindex = 3;
+    document.body.appendChild(resetButton);
+    
 }
 
 function draw(){
@@ -520,15 +537,15 @@ function draw(){
     //console.log("circle x: " + x + "  circle y: " + y);
     drawCircle(x,y,6,context);
     //z += az;
-    context.font = ("10pt Helvetica Neue");
+    context.font = ("11pt 'HelveticaNeue-Light'");
     context.textAlign = "center";
     context.clearRect(0,0,canvas.width,canvas.height);
     context.fillText('X accel: ' + ax_adjusted + " Y accel: " + ay_adjusted, canvas.width/2,canvas.height-20);
-    context.wrapText("Labyrinth Game:\n\n" + "Tilt your phone in order to tilt the game board. Try to guide the ball to the glowing column of light.\n\n To zero the tilting controls at any time, simply tap the screen.", canvas.width/2, canvas.height/5, canvas.width-30, 16);
+    context.wrapText("Labyrinth Game:\n\n" + "Tilt your phone in order to tilt the game board. Try to guide the ball to the glowing column of light.\n\n To zero the tilting controls at any time, simply tap the screen.", canvas.width/2, canvas.height/6, canvas.width-30, 16);
     
     var squareWidth = 2*canvas.width/3;
     var square_posx = (canvas.width -squareWidth)/2;
-    var square_posy = canvas.height/2;
+    var square_posy = canvas.height/2 - 40;
     context.beginPath();
     context.lineWidth = "4";
     context.strokeStyle = "gray";
@@ -540,10 +557,19 @@ function draw(){
     ax_mapped = map_range(ax_adjusted,-10,10,-squareWidth/2,squareWidth/2);
     ay_mapped = map_range(ay_adjusted,-10,10,-squareWidth/2,squareWidth/2);
     
+    drawCircle(circle_posx,circle_posy,10,context);
+    context.fillStyle = "gray";
+    context.fill();
     
     drawCircle(circle_posx+ax_mapped,circle_posy+ay_mapped,10,context);
     context.fillStyle = "red";
     context.fill();
+    
+    if (resetBoolean) {
+        sb.send("resetBoolean","boolean","true");
+        resetBoolean = false;
+    }
+
 }
 
 function sbSender(){

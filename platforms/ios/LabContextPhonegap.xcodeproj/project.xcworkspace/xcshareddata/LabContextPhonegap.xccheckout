@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>53B20CC8-4B5D-4033-896E-D71E9B2B7640</string>
+	<string>9128A1B0-2DE6-4D4F-AFD3-95B64F1FC85F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LabContextPhonegap</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>17DF1EE1-8F3F-4462-8030-B52AD602C114</key>
-		<string>https://github.com/MadSciLabs/labcontext_client_phonegap.git</string>
+		<key>2F0264FA-8EDD-482E-8CCB-34BF11182878</key>
+		<string>https://github.com/MadSciLabs/labcontext_client_labyrinth.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>platforms/ios/LabContextPhonegap.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>17DF1EE1-8F3F-4462-8030-B52AD602C114</key>
+		<key>2F0264FA-8EDD-482E-8CCB-34BF11182878</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MadSciLabs/labcontext_client_phonegap.git</string>
+	<string>https://github.com/MadSciLabs/labcontext_client_labyrinth.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>17DF1EE1-8F3F-4462-8030-B52AD602C114</string>
+	<string>2F0264FA-8EDD-482E-8CCB-34BF11182878</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>17DF1EE1-8F3F-4462-8030-B52AD602C114</string>
+			<string>2F0264FA-8EDD-482E-8CCB-34BF11182878</string>
 			<key>IDESourceControlWCCName</key>
 			<string>labcontext_client_phonegap</string>
 		</dict>
